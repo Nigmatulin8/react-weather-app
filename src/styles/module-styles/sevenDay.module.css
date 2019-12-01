@@ -1,0 +1,97 @@
+.sevenDay {
+	width: 500px;
+
+	display: flex;
+	flex-direction: column;
+	
+	background: #ffffff;
+
+	margin: 15px 15px;
+	
+	font-size: 24px;
+	font-weight: 500;
+}
+
+.description {
+	display: flex;
+	justify-content: space-between;
+
+	font-size: 14px;
+	color: #666666;
+	font-weight: 600;
+
+	padding: 0 10px 5px;
+	
+	border-bottom: 1px solid #DDDDDD;
+}
+
+.header {
+	padding: 25px 25px 15px;
+}
+
+.day_block {
+	width: 122px;
+	font-size: 18px;
+	padding: 10px;
+}
+
+.dayZ {
+	margin-left: -55px;
+}
+
+.day {
+	display: flex;
+	font-size: 16px;
+}
+
+.day_date {
+	font-size: 14px;
+	color: #666666;
+}
+
+.weatherRows {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 1px solid #DDDDDD;
+	margin-bottom: 10px;
+}
+
+.dayTemp {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	margin-left: 15px;
+}
+
+.day img {
+	margin-right: 10px;
+}
+
+.dayDay {
+	font-size: 20px;
+	font-weight: 500;
+}
+
+.dayNight {
+	font-size: 16px;
+	color: #666666;
+}
+
+.dayDescription {
+	width: 80px;
+	font-size: 16px;
+	color: #555555;
+
+	margin-right: 0px;
+	margin-left: 0px;
+}
+
+.dayDescriptionOs {
+	margin-right: 18px;
+	color: #555555;
+
+	font-size: 16px;
+}
