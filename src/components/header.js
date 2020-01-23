@@ -8,16 +8,22 @@ import style from '../styles/module-styles/header.module.css';
     location = store.data.location;
     weather = store.data.weather;
 
-    render() {
+    render() { 
         return (
            <>
                 <div className={style.header}>
                     <div>
                         <img src="dist/img/logo.png"/> 
-                        Weather. {this.location.city} 
+                        {this.location.country == 'RU' ? 'Погода: ' : 'Weather: '} {this.weather.city.name} 
                     </div>
                     <div className={style.header__population}>
-                        <span>Население: {this.weather.city.population}</span><br/>
+                        <span>
+                            {this.location.country == 'RU' ? 'Население: ' : 'Population: '}  
+                            {this.weather.city.population}
+                        </span>
+                        
+                        <br/>
+
                         <span>IP: {this.location.ip}</span><br/>
                     </div>
                 </div>

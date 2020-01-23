@@ -1,6 +1,7 @@
 .sevenDay {
 	width: 500px;
-
+	height: 526px;
+	
 	display: flex;
 	flex-direction: column;
 	
@@ -54,7 +55,7 @@
 	justify-content: space-between;
 	align-items: center;
 	border-bottom: 1px solid #DDDDDD;
-	margin-bottom: 10px;
+
 }
 
 .dayTemp {
@@ -94,4 +95,40 @@
 	color: #555555;
 
 	font-size: 16px;
+}
+
+@media (max-width: 375px) {
+	.sevenDay {
+		width: 375px;
+		height: calc(100vh - 35px);
+
+		display: flex;
+		flex-direction: column;
+		
+		box-sizing: border-box;
+
+		margin: 0;
+		padding: 0 10px;
+
+		font-size: 24px;
+		font-weight: 500;
+	}
+
+	.day_block {
+		width: 122px;
+		font-size: 16px;
+		padding: 7px;
+	}
+	
+	.day {
+		width: 44px;
+	}
+
+	.day img {
+		width: 54px;
+		height: 54px;
+
+		margin-right: 0;
+		margin-left: 20px;
+	}
 }

@@ -12,8 +12,8 @@ import style from '../styles/module-styles/footer.module.css';
         return (
            <>
                 <div className={style.footer}>
-                    <div>
-                        <div>Данные предоставлены сайтом <a href="https://openweathermap.org/">openweathermap.org</a></div>
+                    <div className={style.footer_info}>
+                        <div>Data provided by <a href="https://openweathermap.org/">openweathermap.org</a></div>
                         <div>TimeZone: {this.location.timezone}</div> 
                     </div>
 

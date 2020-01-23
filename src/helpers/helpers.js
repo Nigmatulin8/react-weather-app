@@ -9,16 +9,3 @@ export function makeRequest(url, options = {} ) {
         return response.json();
     });
 }
-
-export function getNews() {
-    let data = window['m_auto'];
-    let item;
-
-    if(!data||!data.length) { return; }
-            
-    item = data.map((news, i) => {
-        return data[i];
-    });
-    
-    return item;
-}

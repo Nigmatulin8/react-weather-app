@@ -1,13 +1,18 @@
 .body {
-	background: #EEEEEE;
-	padding: 35px 100px;
-
 	display: flex;
-	flex-wrap: wrap;
+	min-height: calc(100vh - 138px);
+
+	background: #EEEEEE;
+	
+	padding: 15px 100px;
+	
+	box-sizing: border-box;
 }
 
 .content {
 	width: 400px;
+	height: 475px;
+
 	margin: 15px;
 
 	background: #ffffff;
@@ -92,4 +97,16 @@
 .day_weather_text {
 	font-size: 16px;
 	font-weight: 500;
+}
+
+@media (max-width: 375px) {
+	.content {
+		width: 375px;	
+		height: calc(100vh - 35px);
+
+		padding: 25px 15px;
+		margin: 0;
+
+		box-sizing: border-box;
+	}
 }
