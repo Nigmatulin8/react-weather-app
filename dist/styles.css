@@ -1371,7 +1371,7 @@ a:visited { color: #007bff; }
     font-style: normal;
 
     src: url(/dist/slick.eot);
-    src: url("[object Module]?#iefix") format('embedded-opentype'), url(/dist/slick.woff) format('woff'), url(/dist/slick.ttf) format('truetype'), url("[object Module]#slick") format('svg');
+    src: url("[object Module]?#iefix") format('embedded-opentype'), url(/slick.woff) format('woff'), url(/slick.ttf) format('truetype'), url("[object Module]#slick") format('svg');
 }
 /* Arrows */
 .slick-prev,
