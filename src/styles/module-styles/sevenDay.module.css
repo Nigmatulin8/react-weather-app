@@ -97,38 +97,99 @@
 	font-size: 16px;
 }
 
-@media (max-width: 375px) {
+@media (width: 1024px) {
 	.sevenDay {
-		width: 375px;
-		height: calc(100vh - 35px);
-
+		width: 500px;
+		height: 433px;
+		
 		display: flex;
 		flex-direction: column;
 		
-		box-sizing: border-box;
+		background: #ffffff;
 
-		margin: 0;
-		padding: 0 10px;
-
-		font-size: 24px;
+		margin: 6px 10px 10px 10px;
+		
+		font-size: 20px;
 		font-weight: 500;
+	}
+	
+	.header {
+		padding: 10px 25px 15px;
+	}
+
+	.description {
+		display: flex;
+		justify-content: space-between;
+
+		font-size: 12px;
+		color: #666666;
+		font-weight: 600;
+
+		padding: 0 10px 5px;
+		
+		border-bottom: 1px solid #DDDDDD;
 	}
 
 	.day_block {
 		width: 122px;
 		font-size: 16px;
-		padding: 7px;
+		padding: 10px;
+		margin-right: 10px;
 	}
-	
+
+	.dayZ {
+		margin-left: -55px;
+	}
+
 	.day {
-		width: 44px;
+		display: flex;
+		font-size: 14px;
+	}
+
+	.day_date {
+		font-size: 12px;
+		color: #666666;
 	}
 
 	.day img {
-		width: 54px;
-		height: 54px;
+		width: 50px;
+		height: 50px;
 
-		margin-right: 0;
-		margin-left: 20px;
+		margin-right: 10px;
+	}
+
+	.dayDay {
+		font-size: 16px;
+		font-weight: 500;
+	}
+
+	.dayNight {
+		font-size: 14px;
+		color: #666666;
+	}
+
+	.dayDescription {
+		width: 80px;
+		font-size: 14px;
+		color: #555555;
+
+		margin-right: 20px;
+		margin-left: -45px;
+	}
+
+	.dayDescriptionOs {
+		margin-right: 18px;
+		color: #555555;
+
+		font-size: 14px;
+	}
+
+	.dayTemp {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+		margin-left: 5px;
 	}
 }

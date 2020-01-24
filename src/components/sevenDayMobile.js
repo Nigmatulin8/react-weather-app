@@ -3,7 +3,7 @@ import { observer } from 'mobx-react';
 
 import store from '../store/store';
 import style from '../styles/module-styles/sevenDayMobile.module.css';
-import {toJS} from 'mobx';
+
 @observer class SevenDayMobile extends React.Component {
     weather = store.data.weather;
 
@@ -18,7 +18,6 @@ import {toJS} from 'mobx';
     };
 
     render() {    
-        console.log(toJS(this.weather))   
         let dayT = this.weather.list[0].dt_txt.match(/\d{1,4}-\d{1,2}-\d{1,2}/)[0]
         let timeT = "12:00:00";
         let timeTt = "09:00:00";
@@ -62,7 +61,7 @@ import {toJS} from 'mobx';
                                         {Math.floor(this.weather.list[i].main.temp)}
                                     </div>
                                     <div className={style.dayNight}>
-                                        {Math.floor(this.weather.list[i].main.temp)}
+                                        {Math.floor(this.weather.list[i-4].main.temp)}
                                     </div>
                                 </div>
                             </div>

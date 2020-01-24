@@ -12,26 +12,34 @@
 	display: none;
 }
 
-@media (max-width: 375px) {
-	html {
-		margin: 0;
-		padding: 0;
-	}
+@media (width: 320px) {
+	html { margin: 0; padding: 0; }
+	body { width: 320px; height: 100vh; }
+	.desktop { display: none; }
+	.mobile { display: block; }
+	.slick-arrow { display: none !important; }
+}
 
-	body {
-		width: 375px;
-		height: 100vh;
-	}
+@media (width: 375px) {
+	html { margin: 0; padding: 0; }
+	body { width: 375px; height: 100vh; }
+	.desktop { display: none; }
+	.mobile { display: block; }
+	.slick-arrow { display: none !important; }
+}
 
-	.desktop {
-   		display: none;
-	}
+@media (width: 425px) {
+	html { margin: 0; padding: 0; }
+	body { width: 425px; height: 100vh; }
+	.desktop { display: none; }
+	.mobile { display: block; }
+	.slick-arrow { display: none !important; }
+}
 
-	.mobile {
-		display: block;
-	}
-
-	.slick-arrow {
-		display: none !important;
-	}
+@media (width: 768px) {
+	html { margin: 0; padding: 0; }
+	body { width: 768px; height: 100vh; }
+	.desktop { display: none; }
+	.mobile { display: block; }
+	.slick-arrow { display: none !important; }
 }
