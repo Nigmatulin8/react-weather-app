@@ -6,7 +6,7 @@
 
 	background: #EEEEEE;
 	
-	padding: 15px 100px;
+	padding: 15px 0px;
 	
 	box-sizing: border-box;
 }
@@ -115,14 +115,11 @@
 
 	.content {
 		max-width: 400px;
-		height: 413px !important;
 
 		margin: 6px 10px 10px 10px;
 
 		background: #ffffff;
 		padding: 10px;
-
-		border-bottom: 1px solid #DDDDDD;
 
 		z-index: 1000;
 	}

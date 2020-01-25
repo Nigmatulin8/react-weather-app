@@ -1,7 +1,7 @@
 @media (max-width: 836px) {
 	.sevenDay {
 		max-width: 550px;
-		height: calc(100vh - 35px);
+		height: 495px;
 
 		display: flex;
 		flex-direction: column;
