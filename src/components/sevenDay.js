@@ -58,7 +58,7 @@ import style from '../styles/module-styles/sevenDay.module.css';
                                         {Math.floor(this.weather.list[i].main.temp)}
                                     </div>
                                     <div className={style.dayNight}>
-                                        {Math.floor(this.weather.list[i].main.temp)}
+                                        {Math.floor(this.weather.list[i-4].main.temp)}
                                     </div>
                                 </div>
                             </div>

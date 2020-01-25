@@ -31,23 +31,30 @@ class WeatherData {
         return this.data.weather;
     }
 
-    @action load() {
-        return new Promise((resolve) => {
+    @action load(callback) {
+        let cb = callback || function () {};
+        cb();
+        
+        return new Promise((resolve, reject) => {
             makeRequest(locationUrl).then(location => {
                 this.data.location = location;
-                
-                makeRequest(weatherUrlBase + this.data.location.city + weatherUrlToken).then(weather => {
-                    this.data.weather = weather;
-                    
-                    this.domain = location.country.toLowerCase();
+                this.domain = location.country.toLowerCase();
+                this.newsUrlBase = `${NEWS_API_ROOT}/v2/top-headlines?country=${country[this.domain] ? this.domain : 'en'}&category=business&apiKey=fbf761ee93144c3c93e39af9acfd3c98`;
 
-                    this.newsUrlBase = `${NEWS_API_ROOT}/v2/top-headlines?country=${country[this.domain] ? this.domain : 'en'}&category=business&apiKey=fbf761ee93144c3c93e39af9acfd3c98`;
-                    makeRequest(this.newsUrlBase).then(news => {
-                        this.data.news = news;
-
-                        resolve(true);
-                    });
+                makeRequest(this.newsUrlBase).then(news => {
+                    this.data.news = news;
+                    resolve(true);
+                }).catch(() => {
+                    reject('Internal Server Error. The server is not responding.');
                 });
+
+                makeRequest(weatherUrlBase + this.data.location.city + weatherUrlToken).then(weather => {
+                    this.data.weather = weather; 
+                }).catch(() => {
+                    reject('Internal Server Error. The server is not responding.');
+                });
+            }).catch(() => {
+                reject('Internal Server Error. The server is not responding.');
             });
         });
     }

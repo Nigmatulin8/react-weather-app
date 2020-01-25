@@ -1,6 +1,8 @@
-import React, { Component } from "react";
+import React from "react";
 import Slider from "react-slick";
 import { observer } from 'mobx-react';
+
+import store from '../store/store';
 
 import Heder from '../components/header.js';
 import TemperatureToday from '../components/body.js';
@@ -12,6 +14,8 @@ import News from '../components/news.js';
 
 
 @observer class Weather extends React.Component {
+    weather = store.data.weather;
+
     render() {
         const settings = {
             dots: true,
@@ -19,7 +23,7 @@ import News from '../components/news.js';
             speed: 500,
         };
 
-        return (
+        return (    
             <div>
                 <div className="desktop">
                     <Heder />
