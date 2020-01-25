@@ -57,7 +57,7 @@
 
 	background: #EEEEEE;
 	
-	padding: 15px 100px;
+	padding: 15px 0px;
 	
 	box-sizing: border-box;
 }
@@ -166,14 +166,11 @@
 
 	.content_076cc72 {
 		max-width: 400px;
-		height: 413px !important;
 
 		margin: 6px 10px 10px 10px;
 
 		background: #ffffff;
 		padding: 10px;
-
-		border-bottom: 1px solid #DDDDDD;
 
 		z-index: 1000;
 	}
@@ -414,7 +411,7 @@
 @media (max-width: 1024px) {
 	.sevenDay_7b4ab12 {
 		width: 500px;
-		height: 433px;
+		height: 495px;
 		
 		display: flex;
 		flex-direction: column;
@@ -511,7 +508,7 @@ a { color: #007bff; }
 a:visited { color: #007bff; }
 
 .news_d952da4 {
-	width: 350px;
+	max-width: 350px;
 	height: 495px;
 
 	overflow-y: scroll;
@@ -582,7 +579,7 @@ a:visited { color: #007bff; }
 @media (max-width: 1024px) {
 	.news_d952da4 {
 		max-width: 350px;
-		height: 414px !important;
+		height: 475px !important;
 
 		overflow-y: scroll;
 
@@ -598,6 +595,8 @@ a:visited { color: #007bff; }
 		font-weight: 500;
 
 		border-bottom: 1px solid #DDDDDD;
+
+		overflow-x: hidden;
 	}
 
 	.news__header_4ed59f7 {
@@ -617,7 +616,7 @@ a:visited { color: #007bff; }
 
 	.news_d952da4 {
 		max-width: 836px;
-		height: calc(100vh - 35px);
+		height: calc(100vh - 35px) !important;
 
 		overflow-y: scroll;
 
@@ -641,7 +640,7 @@ a:visited { color: #007bff; }
 
 	.news_d952da4 {
 		max-width: 768px;
-		height: calc(100vh - 35px);
+		height: 95vh !important;
 
 		overflow-y: scroll;
 
@@ -665,7 +664,7 @@ a:visited { color: #007bff; }
 
 	.news_d952da4 {
 		max-width: 538px;
-		height: calc(100vh - 35px);
+		height: 95vh !important;
 
 		overflow-y: scroll;
 
@@ -689,7 +688,7 @@ a:visited { color: #007bff; }
 
 	.news_d952da4 {
 		max-width: 425px;
-		height: calc(100vh - 35px);
+		height: 95vh !important;
 
 		overflow-y: scroll;
 
@@ -713,7 +712,7 @@ a:visited { color: #007bff; }
 
 	.news_d952da4 {
 		max-width: 375px;
-		height: calc(100vh - 35px);
+		height: 95vh !important;
 
 		overflow-y: scroll;
 
@@ -737,7 +736,7 @@ a:visited { color: #007bff; }
 
 	.news_d952da4 {
 		max-width: 320px;
-		height: calc(100vh - 35px);
+		height: 95vh !important;
 
 		overflow-y: scroll;
 
@@ -829,7 +828,7 @@ a:visited { color: #007bff; }
 @media (max-width: 836px) {
 	.sevenDay_0305633 {
 		max-width: 550px;
-		height: calc(100vh - 35px);
+		height: 495px;
 
 		display: flex;
 		flex-direction: column;
